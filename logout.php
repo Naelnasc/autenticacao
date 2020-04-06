@@ -1,0 +1,19 @@
+<?php
+################################################################
+#Slogin Kernel Versão 6.5.1                                    #
+#Compilação 311220121938                                       #
+#Copyright Sandrinho Info                                      #
+#Este código é disponibilizado sob a licença                   #
+#Creative Commons (Para redestribuir, é necessária a menção do #
+#Autor).                                                       #
+################################################################
+//Arquivo logout.php
+#Inclui o arquivo de configuração do sistema
+require_once "conf/desc.php";
+#Faz procedimento da sessão
+@session_start();
+#Encerra a sessão
+session_destroy();
+#Redireciona para a página raiz
+header("Location:$raiz");
+?>
